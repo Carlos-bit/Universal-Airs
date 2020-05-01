@@ -27,12 +27,11 @@ header
     width: 100%;
     height: 5%;
     background-color: rgb(255, 255, 255);
-    /* border-bottom: rgb(197, 197, 197) 2px solid; */
 }
 footer
 {
     width: 100%;
-    background-color: rgb(65, 116, 167);
+    background-color: rgb(16, 52, 136);
 }
 article
 {
@@ -91,7 +90,7 @@ article
 a
 {
     text-decoration: none;  
-    color: rgb(65, 116, 167);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -266,10 +265,9 @@ a
     border-radius: 4px;
     color: black;
     height: 30px;
-    opacity: .8;
     margin-bottom: 20px;
     cursor: pointer;
-    background: #6fc5e9;
+    background: rgb(59, 97, 187);
     display: block;
     border: none;
     border-bottom: 1px solid #500707;
@@ -378,6 +376,15 @@ a
     font-family: sans-serif;
     font-size: 1.3em;
     color: rgb(31, 110, 31);
+    text-align: left;
+    font-weight: 500;
+}
+.inner h2
+{
+    margin-top: 1px;
+    font-family: sans-serif;
+    font-size: 3.1em;
+    color: rgb(255, 255, 255);
     text-align: left;
     font-weight: 500;
 }
@@ -496,8 +503,8 @@ a
 .hoverzoom .retina a {
     display: block;
     width: 150px;
-    background: #6fc5e9;
-    border: 1px solid #59afd4;
+    background: rgb(16, 52, 136);
+    border: 1px solid rgb(16, 52, 136);
     border-radius: 4px;
     color: #fff;
     text-decoration: none;
@@ -507,13 +514,13 @@ a
 }
 .banner
 {
-    background: rgb(58, 92, 170);
+    background: rgb(16, 52, 136);
     width: 100%;
     height: 50vh;
 }
 .banner2
 {
-    background: rgb(58, 92, 170);
+    background: rgb(16, 52, 136);
     width: 100%;
     height: 10vh;
 }
