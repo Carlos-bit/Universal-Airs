@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="ptbr">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universal Airs</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type='text/css' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
     <!--*Menu-->
     <header>
-        <nav id="menu">
-            <div class="opcao"><img src="img/logoatt.png" alt="" width="135px" height="95px"></div>
+        <!--*Menu-->
+        <div class="banner2">
+            <nav id="menu">
+            <div class="opcao"><img src="img/logoUA.png" alt="" width="135px" height="95px"></div>
             <div class="opcao"><a href="home.html"><i class="fas fa-home"></i> Home</a></div>
             <div class="opcao"><a href="voo.html"><i class="fas fa-plane"></i> Voo</a></div>
             <div class="opcao"><a href="hospedagem.html"><i class="fas fa-hotel"></i> Hospedagem</a></div>
@@ -20,11 +19,31 @@
             <div class="opcao"><a href=""><i class="fas fa-ice-cream"></i> Atrações</a></div>
             <div class="opcao"><a href=""><i class="fas fa-info-circle"></i> Sobre nós</a></div>
             <div class="opcao"><a href=""><i class="fas fa-user"></i> Login</a></div>
-        </nav>
+            </nav>
+        </div>        
     </header>
-    <div class="main">
-        
+    <!-- conteudo -->
+    <div id="principal">
+        <div id="esquerda">
+            <div id="conteudoEsquerda1" class="conteudoEsquerda"></div>
+            <div id="conteudoEsquerda2" class="conteudoEsquerda"></div>  
+        </div>
+        <div id="conteudo">
+            <div class="conteudos">
+                <div id="informacao1" class="informacao hoverzoomVoos">
+                    <button id="btnExploreVoos">Explore</button>                    
+                </div>
+                <div id="informacao2" class="informacao hoverzoomVoos"><button id="btnExploreVoos">Explore</button></div>
+                <div id="informacao3" class="informacao hoverzoomVoos"><button id="btnExploreVoos">Explore</button></div>
+            </div>
+            <div id="conteudos2" class="conteudos">
+                <div id="informacao4" class="informacao hoverzoomVoos"><button id="btnExploreVoos">Explore</button></div>
+                <div id="informacao5" class="informacao hoverzoomVoos"><button id="btnExploreVoos">Explore</button></div>
+                <div id="informacao6" class="informacao hoverzoomVoos"><button id="btnExploreVoos">Explore</button></div>
+            </div>
+        </div>
     </div>
+    <!-- ! --------------------------------------------------- RODAPÉ ---------------------------------------------------------- -->
     <footer class="fixarRodape">
         <section class="rodape">
             <div class="qualquer">
@@ -38,7 +57,7 @@
                         <div class="submenu"><a href=""><i class="fas fa-car"></i> Aluguel de carros</a></div>
                         <div class="submenu"><a href=""><i class="fas fa-ice-cream"></i> Atrações</a></div>
                         <div class="submenu"><a href=""><i class="fas fa-info-circle"></i> Sobre nós</a></div>
-                </div>
+                    </div>
                     <div class="form-principal">
                     <form action="" class="form-contato" method="POST" tabindex="1">
                         <p>Receba as novidades!</p>
@@ -50,8 +69,7 @@
                         <i class="far fa-envelope"></i>
                     </form>                         
                 </div>      
-            </div>
-                  
+            </div>                  
          </section>
     </footer>
 </body>
