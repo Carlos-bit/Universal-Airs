@@ -1,0 +1,519 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* * APLICANDO ESTILO UNICO PARA O CORPO DO SITE */
+body, html
+{
+    width: 100%;
+    scroll-behavior: smooth;
+    margin: 0 auto;    
+}
+
+br{padding-top: 2px;}
+
+a{text-decoration: none;font-family: arial;}
+
+img{max-width: 100%;}
+
+header
+{
+    width: 100%;
+    height: 5%;
+    background-color: rgb(255, 255, 255);
+    /* border-bottom: rgb(197, 197, 197) 2px solid; */
+}
+footer
+{
+    width: 100%;
+    background-color: rgb(65, 116, 167);
+}
+article
+{
+    width: 14%;
+}
+
+
+/* * Menu */
+
+#menu
+{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 10vh;
+    align-items: center;
+    font-family: Glacial Indiferrence;
+    padding: 0 3px; 
+}
+#menu a:hover 
+{
+	color: rgb(255, 255, 255);
+    border-bottom:3px solid #ffffff;
+}
+
+.submenu
+{   
+    height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Glacial Indiferrence;
+    font-size: 15px;
+    margin-top: 1px;
+}
+.submenuR
+{
+    margin: 5px;
+}
+.submenuL
+{
+    margin: 5px;
+}
+.submenu a
+{
+    color: #ffffff;
+    padding: 10px;
+}
+.opção
+{
+    width: 70%;
+    height: 10vh;
+    text-decoration: none;
+    display: flex;
+}
+a
+{
+    text-decoration: none;  
+    color: rgb(65, 116, 167);
+}
+
+
+
+/* * Criando efeito parallax */
+.parallax
+{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Primeiro - home */
+.home{background-image: url(../img/airplane-2588202_1920.jpg);height: 100vh;}
+
+/* *TXT */
+
+.otitulo h1
+{
+    text-align: center; 
+    font-size: 80px; 
+    color: white; 
+    height: 40%; 
+    font-family: Glacial Indiferrence; 
+    padding: 17%; 
+    font-weight: bold;
+}   
+
+.otitulo p
+{
+    text-align: center; 
+    font-size: 30px; 
+    color: write; 
+    height: 20%; 
+    font-family: Glacial Indiferrence;      
+    font-weight: bold;
+}
+
+
+/*  Teste */
+	/* BTN GERAL */
+/* .btn
+{
+    background-color: #105bc1;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family:  Glacial Indiferrence;
+    font-weight: 300;
+    padding: 6px 12px;
+    position: relative;
+} */
+
+.btn
+{
+    border: none;
+    color: #ffffff;
+    padding: 6px;
+    margin: 5px;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 400ms ease;
+}
+.btn i{margin-right: 5px;}
+
+/* TESTE 1*/ 
+.btn-primary
+{
+    background: #241b7a;
+}
+.btn-primary:hover
+{
+   background: transparent;
+   color: #062858;
+   box-shadow: inset 0 0 0 3px #072e66;
+}
+
+
+/* !-----------------------------RODAPE-------------------------- */
+.rodape
+{
+    width: 70%;
+    margin: 0 auto;
+    height: 22vh;
+    font-family: Glacial Indiferrence;
+}
+.form-principal
+{
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.form-contato
+{
+    width: 50%;
+    font-family: Glacial Indiferrence;
+    float:right;
+}
+
+.input-contato
+{
+    width: 100%;
+    color: black;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+}
+
+.txt_area
+{
+    width: 100%;
+    color: black;
+    font-size: 18px;
+    background-color: black;
+    border: 1px solid #ffffff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: Glacial Indiferrence;
+}
+
+.btn_form
+{
+    font-weight: bold;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 4px;
+    color: black;
+    height: 30px;
+    opacity: .8;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: #ffffff;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #500707;
+    border-right: 1px solid #500707;
+    transition: 600ms;
+    float: left;
+}
+
+.btn_form:hover
+{
+    opacity: 100%;
+}
+.btn_cont
+{
+    font-weight: bold;
+    width: 100%;
+    font-size: 20px;
+    border-radius: 4px;
+    color: black;
+    height: 30px;
+    opacity: .8;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: #6fc5e9;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #500707;
+    border-right: 1px solid #500707;
+    transition: 600ms;
+    float: left;
+}
+
+.btn_cont:hover
+{
+    opacity: 100%;
+}
+.logo
+{
+    border-radius: 10px;
+    width: 25%;
+    height: 50%;
+
+}
+.qualquer
+{
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+}
+/* .fixarRodape {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+} */
+
+/* *CONTEUDO------------------------------------ */
+.servico
+{
+    width: 20%;
+    margin-bottom: 3%; 
+    text-align: left;   
+    
+}
+.servico img
+{
+    border-radius: 7px 7px 0 0;
+}
+.servico2
+{
+    width: 45%;
+    margin-bottom: 3%; 
+    text-align: left;   
+    
+}
+.servico2 img
+{
+    border-radius: 7px 7px 0 0;
+}
+.servico3
+{
+    width: 28%;
+    margin-bottom: 3%; 
+    text-align: left;   
+}
+.servico3 img
+{
+    border-radius: 7px 7px 0 0;
+}
+.container
+{
+    margin: 0 15%;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radius
+{
+    border-radius: 5px;
+}
+/* .inner
+{
+    background: rgb(219, 230, 240);
+} */
+.inner a
+{
+    font-size: 1.5em;
+    color: #130400;
+    font-weight: 700;
+}
+.inner h1
+{
+    font-family: Arial;
+    font-size: 1.4em;
+    color: #2e2e2e;
+    text-align: left;
+    font-weight: 700;
+}
+.inner h4
+{
+    font-family: sans-serif;
+    font-size: 1.3em;
+    color: rgb(65, 116, 167);
+    text-align: left;
+    font-weight: 500;
+}
+.inner h3
+{
+    font-family: sans-serif;
+    font-size: 1.3em;
+    color: rgb(31, 110, 31);
+    text-align: left;
+    font-weight: 500;
+}
+.inner p
+{
+    font-family: sans-serif;
+    font-size: 1.1em;
+    color: #130400;
+    line-height: 1.5;
+}
+.inner p1
+{
+    font-family: sans-serif;
+    font-size: 1em;
+    margin-top: 2%;
+    color: rgb(53, 53, 53);
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.contagem
+{
+    border-radius: 1px  ;
+    width:300px;
+    height:70px;
+    background-color: #ffffff;
+}
+
+.numero
+{
+    min-width: 20px;
+    max-width: 55px;
+    background-color: #efefef;
+    color: rgb(58, 84, 200);
+    font-size: 20px;
+    margin: 5px;
+    text-align: left;
+    border-radius: 5px;
+    padding: 5px;
+}
+.legenda
+{
+    height: 25px;
+    line-height: 10px;
+    font-size:20px;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.img-cont
+{
+    width:300px; 
+    height:200px;
+}
+.img-cont2
+{
+    width:650px; 
+    height:350px;
+}
+.img-cont3
+{
+    width:700px; 
+    height:350px;
+}
+.hoverzoom {
+    position: relative;
+    overflow: hidden;
+}
+.hoverzoom img {
+    width: 100%; 
+    border-radius: 2px;
+    -webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+.hoverzoom:hover img {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+.hoverzoom .retina{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;    
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);    
+    border-radius: 2px;
+    text-align: center;
+    padding: 30px;
+
+    -webkit-transition:	 all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    -o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+    transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
+}
+.hoverzoom:hover .retina {
+    opacity: 1;
+    box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+    
+}
+.hoverzoom .retina p {
+    color: #fff;
+}
+.hoverzoom .retina h1 
+{
+    font-size: 35px;
+    color: rgb(179, 179, 179);
+}
+.hoverzoom .retina a {
+    display: block;
+    width: 150px;
+    background: #6fc5e9;
+    border: 1px solid #59afd4;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 16px auto 0;
+}
+.banner
+{
+    background: rgb(58, 92, 170);
+    width: 100%;
+    height: 50vh;
+}
+.banner2
+{
+    background: rgb(58, 92, 170);
+    width: 100%;
+    height: 10vh;
+}

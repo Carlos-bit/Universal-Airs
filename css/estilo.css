@@ -1,0 +1,907 @@
+/* * IMPORTANDO O RESET PARA O CSS */
+/* @import url("../css/reset.css"); */
+*
+{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+/* * APLICANDO ESTILO UNICO PARA O CORPO DO SITE */
+body, html
+{
+    width: 100%;
+    scroll-behavior: smooth;    
+}
+
+br
+{
+    padding-top: 2px;    
+}
+
+a
+{
+    text-decoration: none;
+    font-family: arial;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+.corpo
+{
+    width: 100%;        
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+
+.topo
+{
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    position: fixed;
+}
+
+.conteudos
+{
+    width: 100%;    
+    padding: 3% 4%;
+    text-align: center;      
+    font-size: 30px; 
+    color: white; 
+    height: 30%; 
+    font-family: Arial;     
+    font-weight: bold;  
+}
+
+.conteudo_mapa
+{
+    width: 100%;    
+    padding: 1% 1%;
+    text-align: center; 
+    text-align: center; 
+    font-size: 32px; 
+    color: white; 
+    height: 30%; 
+    font-family: Arial;     
+    font-weight: bold; 
+}
+
+img
+{
+    max-width: 100%;
+}
+
+/* * LOGO */
+.logo-home
+{
+    position: fixed;    
+    background-color: transparent;    
+    width: 12vh;
+    height: 12vh;
+    display: block;
+}
+
+.logo-home a
+{
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    cursor: pointer; 
+    margin: 2.5px 0 2px 2.5px; 
+}
+
+.btn-login
+{
+    position: fixed;    
+    width: 30px;
+    height: 30px;
+    left: 97%;
+    display: block;
+    bottom: 95.5%;
+} 
+
+.btn-login a
+{
+    color:white;
+    width: 30px;
+    height: 30px;
+    font-size: 2em;
+}
+
+/* ============================================================================================================================================= */
+
+/* * Menu */
+#menu
+{
+    height: 50px;    
+    /* background-color:rgb(58, 58, 58); */
+    width: 100%;
+    padding-top: 1px; 
+    padding-bottom: 1px;
+}
+
+#menu ul 
+{    
+    padding-top: 2vh;
+    padding-left: 13vh;    
+    margin:0px;
+    float: right;       
+    list-style:none;
+    font:100% arial; 
+    position: fixed;   
+}
+
+#menu ul li { display: inline;}
+ 
+#menu ul li a 
+{
+    /* background-color:#EDEDED; */
+	color: white;
+	text-decoration: none;
+    /* border-bottom:3px solid #EDEDED; */
+	padding: 2px 30px;
+    float:center;
+    font-weight: bold;
+}
+ 
+#menu ul li a:hover 
+{
+    /* background-color:rgb(58, 58, 58); */
+	color: rgb(255, 255, 255);
+    border-bottom:3px solid #ffb000;
+}
+
+/* ============================================================================================================================================= */
+
+/* * VER MAIS e VER PLANOS */
+
+.ver_mais
+{
+    width: 170px;
+    height: 55px;
+    background-color: #ffb000;
+    color: #fff;
+    font-size: 0.6em;   
+    border-radius: 7px; 
+}
+
+.ver_menos
+{
+    width: 170px;
+    height: 55px;
+    background-color: #ffb000;
+    color: #fff;
+    font-size: 0.6em;    
+    border-radius: 7px;
+}
+
+.ver_planos
+{
+    width: 170px;
+    height: 55px;
+    background-color: #ffb000;
+    color: rgb(255, 255, 255);
+    font-size: 0.6em;   
+    border-radius: 7px;
+}
+
+/* ============================================================================================================================================= */
+/* * Imagens de cada conteúdo */
+
+/* Primeiro - Início */
+.primeira{background-image: url(../img/1920/principal.jpg);height: 100vh;}
+
+/* Segundo - Quem somos */
+.segunda{background-image: url(../img/1920/servicos.jpg);height: 80vh;}
+
+/* Terceiro - Serviços */
+.terceira{background-image: url(../img/1920/equipe.jpg);height: 80vh;}
+
+/* Quarto - Planos */
+.quarta{background-image: url(../img/1920/planos_site.jpg);height: 80vh;}
+
+/* Quinto - Localização */
+.quinta{background-image: url(../img/1920/localizacao.jpg);height: 80vh;}
+
+/* Sexto - Contato */
+.sexta{background-image: url(../img/1920/contato.jpg);height: 80vh;}   
+
+/* ============================================================================================================================================= */
+
+    /* * Criando efeito parallax */
+    .parallax
+    {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+/* ============================================================================================================================================= */
+
+    /* * JavaScript */    
+    @media only screen and (max-device-width: 1024px)
+    {
+        .parallax
+        {
+            background-attachment: scroll;
+        }
+    }
+
+/* ============================================================================================================================================= */
+
+/* *TXT */
+
+.eltitulo h1
+{
+    text-align: center; 
+    font-size: 80px; 
+    color: white; 
+    height: 40%; 
+    font-family: Helvetica; 
+    padding: 17%; 
+    font-weight: bold;
+}   
+
+.eltitulo p
+{
+    text-align: center; 
+    font-size: 30px; 
+    color: white; 
+    height: 20%; 
+    font-family: Helvetica;      
+    font-weight: bold;
+}
+
+.txt_pri, .txt_sec
+{
+    font-size: 25px;
+}
+        
+/* ============================================================================================================================================= */
+
+/* * Rodapé */
+
+.rodape
+{
+    width: 100%;    
+    background-color: black;
+    height: 13vh;
+}
+
+.area_adm
+{
+    background-color: black;
+    padding: 16px 0px 1px 0px;
+    text-align: center;
+    float: none;
+    opacity: 60%;
+}
+
+.adm 
+{
+    color: #fff;
+    opacity: 60%;
+}
+
+.cop
+{
+
+    text-align: center;        
+    margin-left: 40%; 
+    margin-top: 50px;
+}
+
+
+/* * Radius */
+.radius{border-radius: 27px;}
+
+/* ============================================================================================================================================= */
+
+/* * Blocos - Serviços */
+
+.servicos
+{    
+    margin: 0 auto;
+    display: flex;    
+    border-radius: 9px;    
+}
+
+.servico 
+{
+    padding-top: 2px;
+    margin: 4px;
+    text-align: center;
+    width: 100%;          
+}
+
+.servico h3
+{
+    font-size: 25px;
+}
+
+.servico img
+{
+    border-radius: 9px;
+}
+
+.servico img:hover
+{
+    border-radius: 9px;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);    
+}
+
+/* ============================================================================================================================================= */
+    
+
+/* * Centralizando o formulário no meio */
+   
+/*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+label 
+{
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+}
+
+input, textarea 
+{
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1.3em arial;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+     width: 800px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 3px solid #999;
+}
+
+textarea 
+{
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 5em;
+
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: vertical;
+}
+
+.button 
+{
+    /* Para posicionar os botões para a mesma posição dos campos de texto */
+    padding-left: 100px; /* mesmo tamanho que os elementos do tipo label */
+}
+button 
+{
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço entre as labels e os seus campos de texto*/
+    margin-left: 5em;
+}
+
+/* ============================================================================================================================================= */
+
+/* ! USANDO MEDIA QUERY NO SITE */
+
+/* * DISPOSITIVOS DE 1920px DE LARGURA */
+
+@media screen and (min-width:1920px)
+{   
+
+}
+
+/* * DISPOSITIVOS DE 1280px DE LARGURA */
+
+@media screen and (min-width:1280px)
+{
+    
+}
+
+/* * DISPOSITIVOS DE 960px DE LARGURA */
+
+@media screen and (min-width:960px)
+{
+    
+}
+
+/* * DISPOSITIVOS DE 768px DE LARGURA */
+
+@media screen and (min-width:768px)
+{
+   
+}
+
+/* * DISPOSITIVOS DE 480px DE LARGURA */
+
+@media screen and (min-width:480px)
+{
+   
+}
+
+/* ============================================================================================================================================= */
+
+/* ! Formulário para contato */
+
+.form-principal
+{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-contato
+{
+    width: 100%;
+    font-family: "Arial", Times, serif;
+}
+
+.input-contato
+{
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+}
+
+.txt_area
+{
+    width: 100%;
+    color: #292929;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #E9E9E9;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 200px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    text-indent: 20px;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "Arial", Times, serif;
+}
+
+.btn_form
+{
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #fff;
+    height: 40px;
+    opacity: .8;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: #ffb000;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #500707;
+    border-right: 1px solid #500707;
+    transition: 1s;
+    float: left;
+}
+
+.btn_form:hover
+{
+    opacity: 1;
+}
+/* ============================================================================================================================================= */
+
+/* ! Formulário de Login */
+
+/* *Classses pré definidas, para serem usadas */
+
+html
+{
+    box-sizing: border-box;
+    font-size: 100%;
+    height: 100%;
+}
+
+body
+{
+    background-color: #2c3338;
+    color: #606468;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    height: 100%;
+    line-height: 1.5;
+    margin:0;
+    min-height: 100vh;
+}
+
+.alinhamento
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20rem;
+    width: 90%;
+}
+
+.hidden
+{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.icon
+{
+    display: inline-block;
+    fill: #606468;
+    color: white;
+    font-size: 1rem;
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
+}
+
+.copyright
+{
+    position: fixed;
+    /* margin-top:23.5%; */
+    top: 900px;
+}
+
+/* ! Editando os elementos do fomulário*/
+
+a
+{
+    color: #eee;
+    outline: 0;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover
+{
+    text-decoration: underline;
+}
+
+input
+{
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+input[type='submit']
+{
+    cursor: pointer;
+}
+
+.frm
+{
+    margin: calc(0.875rem * -1);
+}
+
+.frm input[type='password'],
+.frm input[type='text'],
+.frm input[type='submit']
+{
+    width: 100%;
+}
+
+.field_forms
+{
+    display: flex;
+    margin: 0.875rem;
+}
+
+.field_forms2
+{
+    display: flex;
+    margin: 0.875rem;
+}
+
+.field_form
+{
+    flex: 1;
+}
+
+.login
+{
+    color: #eee;
+    background-color:#23292e;
+    padding-bottom: 1.9em;
+    padding-top: 1.9em;
+    border: 1%;
+    border-radius: 10px;
+}
+
+.login label,
+.login input[type='text'],
+.login input[type='password'],
+.login input[type='submit'] {
+  border-radius: 0.25rem;
+  padding: 1rem;
+}
+
+.login label {
+  background-color: #363b41;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.login input[type='password'],
+.login input[type='text'] {
+  background-color :#3b4148;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.login input[type='password']:focus,
+.login input[type='password']:hover,
+.login input[type='text']:focus,
+.login input[type='text']:hover {
+  background-color: #434a52;
+}
+
+.login input[type='submit'] {
+  background-color: #ffb000;
+  color: #eee;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.login input[type='submit']:focus,
+.login input[type='submit']:hover {
+  background-color: #ffae00de;
+}
+
+.text--center 
+{
+    text-align: center;
+}
+
+.text--center 
+{
+    opacity: 50%;
+}
+
+/* ============================================================================================================================================= */
+
+/* ! EDITANDO PAGINA DE PLANOS */
+
+.conteudos_planos
+{
+    width: 100%;    
+    padding: 2% 3%;
+    text-align: center;      
+    font-size: 30px; 
+    color: white; 
+    height: auto; 
+    font-family: Arial;     
+    font-weight: bold;  
+}
+
+#tabela_planos
+{
+    margin: 100px auto;
+    text-align: center;
+    width: 892px;
+}
+
+#tabela_planos .plano
+{
+    font: 12px 'Arial';
+    text-shadow: 0 1px rgba(255,255,255,.8);
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 20px;
+    width: 200px;
+    height: 500px;
+    float: left;
+    position: relative;
+}
+
+#tabela_planos #popular
+{
+    z-index: 2;
+    top: -13px;
+    border-width: 3px;
+    padding: 30px 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+	-webkit-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+    box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);     
+}
+
+#tabela_planos .plano:nth-child(1) 
+{
+    -moz-border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px;
+}
+
+#tabela_planos .plano:nth-child(4) 
+{
+    -moz-border-radius: 5px 0 0 5px;
+	-webkit-border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px;
+}
+
+#tabela_planos h3
+{
+    font-size: 20px;
+	font-weight: normal;
+	padding: 20px;
+	margin: -20px -20px 50px -20px;
+	background-color: #eee;
+	background-image: -moz-linear-gradient(#fff,#eee);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));    
+	background-image: -webkit-linear-gradient(#fff, #eee);
+	background-image: -o-linear-gradient(#fff, #eee);
+	background-image: -ms-linear-gradient(#fff, #eee);
+	background-image: linear-gradient(#fff, #eee);
+}
+
+#tabela_planos #most-popular h3 {
+	background-color: #ddd;
+	background-image: -moz-linear-gradient(#eee,#ddd);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));    
+	background-image: -webkit-linear-gradient(#eee, #ddd);
+	background-image: -o-linear-gradient(#eee, #ddd);
+	background-image: -ms-linear-gradient(#eee, #ddd);
+	background-image: linear-gradient(#eee, #ddd);
+	margin-top: -30px;
+	padding-top: 30px;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0; 		
+}
+
+#tabela_planos .plano:nth-child(1) h3 {
+	-moz-border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	border-radius: 5px 0 0 0;       
+}
+
+#tabela_planos .plano:nth-child(4) h3 {
+	-moz-border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	border-radius: 0 5px 0 0;       
+}	
+
+#tabela_planos h3 span {
+	display: block;
+	font: bold 25px/100px Georgia, Serif;
+	color: #777;
+	background: #fff;
+	border: 5px solid #fff;
+	height: 100px;
+	width: 100px;
+	margin: 10px auto -65px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	-moz-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+	-webkit-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+	box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+}
+
+/* --------------- */
+
+#tabela_planos ul {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+#tabela_planos li {
+	border-top: 1px solid #ddd;
+	padding: 10px 0;
+}
+
+/* --------------- */
+	
+#tabela_planos .login_user 
+{
+	position: relative;
+	padding: 8px 20px;
+	margin: 20px 0 0 0;  
+	color: #fff;
+	font: bold 14px Arial, Helvetica;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;       
+	background-color: #72ce3f;
+	background-image: -moz-linear-gradient(#72ce3f, #62bc30);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#72ce3f), to(#62bc30));    
+	background-image: -webkit-linear-gradient(#72ce3f, #62bc30);
+	background-image: -o-linear-gradient(#72ce3f, #62bc30);
+	background-image: -ms-linear-gradient(#72ce3f, #62bc30);
+	background-image: linear-gradient(#72ce3f, #62bc30);
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;     
+	text-shadow: 0 1px 0 rgba(0,0,0,.3);        
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+}
+
+#tabela_planos .login_user:hover 
+{
+	background-color: #62bc30;
+	background-image: -moz-linear-gradient(#62bc30, #72ce3f);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#62bc30), to(#72ce3f));      
+	background-image: -webkit-linear-gradient(#62bc30, #72ce3f);
+	background-image: -o-linear-gradient(#62bc30, #72ce3f);
+	background-image: -ms-linear-gradient(#62bc30, #72ce3f);
+	background-image: linear-gradient(#62bc30, #72ce3f); 
+}
+#tabela_planos .login_user:active, 
+#tabela_planos .login_user:focus 
+{
+	background: #62bc30;       
+	top: 2px;
+	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset; 
+}
+
+/* --------------- */
+
+.planos:before, .planos:after 
+{
+  content:"";
+  display:table
+}
+
+.planos:after 
+{
+  clear:both
+}
+
+.planos 
+{
+  zoom:1
+}
+
