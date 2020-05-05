@@ -690,3 +690,19 @@ a
     padding: 10px 15px;
     margin: 16px auto 0;
 }
+#le {
+    background-color : #FFFFFF;
+    
+    width:18%;
+    float : left ;
+    margin-right:25px;
+    }
+    
+
+    
+    #atracoes img{
+    margin-top: 30px;
+    height : 248px;
+    width:430px;
+    
+    }
