@@ -1,0 +1,46 @@
+<html> <!-- salvar como disney.html -->
+	<head>
+	   <title>Agendamento Disney World</title>
+	   <!--  arquivo externo estilos.css -->
+	</head>
+	
+	<body>
+	  <div id="areaInformacoes">
+		<h1>Agendamento de Atividade-Disney World</h1>
+		
+		<form 	id="frmCadastro"
+				action="agendaDisney.php"
+				method="get"
+				enctype="">
+			RESORT:
+			<input	type="text"
+					name="resort"
+					value="Disney World Orlando"
+					readonly> 
+			- Senha:
+			<input	type="password"
+					name="senha"
+					maxlength="10">
+			<hr>
+			Nome do responsável:
+			<input	type="text"
+					name="responsavel"
+					size="80"
+					maxlength="80">
+			<br>
+			N&ordm; de familiares (incluindo crianças):
+			<input 	type="number"
+					min="1"
+					max="99"
+					value="4"
+					name="familiares">
+					
+			<hr>
+			<input type="submit" value="Enviar Dados">
+			<input type="reset" value="Limpar Dados">
+					
+		</form>
+		
+	  </div>
+	</body>
+</html>
