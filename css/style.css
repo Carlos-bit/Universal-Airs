@@ -753,6 +753,6 @@ a
     margin-bottom: 0;
 }
 .btnFrmLogin:hover{
-    background-color: rgb(16, 52, 136);
+    background-image: linear-gradient(to left, rgb(94, 93, 141),rgb(16, 52, 136));
     color: white;
 }
