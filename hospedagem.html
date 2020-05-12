@@ -1,109 +1,177 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="ptbr">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link rel="shortcut icon" href="assets/img/Icone.png">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../Universal-Airs/css/leandrocss.css" rel="stylesheet">
-  <title>Universal Airs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Airs</title>
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type='text/css' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 </head>
 <body>
-
-  <!-- Header -->
-      <div class="header">
-        <a id="logo" href="index.html">
-        </a>
-        <div class="header-right">
-          <a href="#home">Home</a>
-          <a href="#voos">Voos</a>
-          <a href="#hospedagem">Hospedagem</a>
-          <a href="#aluguel">Aluguel de Carros</a>
-          <a href="#atracoes">Atrações</a>
-          <a href="#login">Login</a>
-        </div>
-      </div>
-    <!-- ======= Sessão Principal ======= -->
-<div class="container">
-  <nav>
+    <!--*---------------------------------------------------Cabeçalho----------------------------------------------->
+    
     <header>
-      <!-- Header content -->
-        <h1> Hospedagem</h1>
+        <!--*Menu-->
+        <div class="banner2">
+            <nav id="menu">
+            <div class="opcao"><img src="img/logoUA.png" alt="" width="135px" height="95px"></div>
+            <div class="opcao"><a href="home.html"><i class="fas fa-home"></i> Home</a></div>
+            <div class="opcao"><a href="voos.html"><i class="fas fa-plane"></i> Voo</a></div>
+            <div class="opcao"><a href="hospedagem.html"><i class="fas fa-hotel"></i> Hospedagem</a></div>
+            <div class="opcao"><a href="aluguel.html"><i class="fas fa-car"></i> Aluguel de carros</a></div>
+            <div class="opcao"><a href="atracoes.html"><i class="fas fa-ice-cream"></i> Atrações</a></div>
+            <div class="opcao"><a href="login.html"><i class="fas fa-user"></i> Login</a></div>
+            </nav>
+        </div>
     </header>
-    <div class="cabecalho">
-      <h3>As melhores opções de hospedagem para você!</h3>
-      <p> Encontre o melhor hotel com base em nossas categorias </p>
-    </div>
 
-    <!-- Navigation -->
-    <div class="custom-select" style="width:200px;">
-        <select>
-        <option value="0">Por Relevância</option>
-        <option value="1">Por Preço</option>
-        <option value="2">Por Empresa</option>
-        </select>
-    </div>
-  </nav>
-  <main>
-    <!-- Main content -->
-
-    <div class="wrapper">
-      <div class="box-container">
-        <div class="box">
-          <div class="box-top">
-            <a href="#0" class="overlay">
-              <h1 class="overlay-text">EXPLORE</h1>
-            </a>
-            <img src="assets/img/brasil.jpg" width="340px" height="285px">
+    
+    <main class="container">
+      <!-- Main content -->
+      <div class="cabecalho">
+        <h3>As melhores opções de hospedagem para você!</h3>
+        <p> Encontre o melhor hotel com base em nossas categorias </p>
+          <select>
+          <option value="0">Por Relevância</option>
+          <option value="1">Por Preço</option>
+          <option value="2">Por Empresa</option>
+          </select>
+        </div>
+      <div class="wrapper">
+        <div class="box-container">
+          <div class="box">
+            <div class="box-top">
+              <a href="#0" class="overlay">
+                <h1 class="overlay-text">EXPLORE</h1>
+              </a>
+              <img src="assets/img/brasil.jpg" width="340px" height="285px">
+            </div>
+            <div class="triangle-container">
+            </div>
+            <div class="box-bottom">
+              <h2>Brasil</h2>
+              <p>8.634 Opções de Hotéis </p>
+            </div>
           </div>
-          <div class="triangle-container">
+          <!-- /box-->
+          <div class="box">
+            <div class="box-top">
+              <a href="#0" class="overlay">
+                <h1 class="overlay-text">EXPLORE</h1>
+              </a>
+              <img src="assets/img/eua.jpg" width="340px" height="285px">
+            </div>
+            <div class="triangle-container">
+              <div class="triangle"></div>
+            </div>
+            <div class="box-bottom">
+              <h2>Estados Unidos</h2>
+              <p>8.473 Opções de Hotéis </p>
+            </div>
           </div>
-          <div class="box-bottom">
-            <h2>Brasil</h2>
-            <p>8.634 Opções de Hotéis </p>
+          <!-- /box-->
+          <div class="box">
+            <div class="box-top">
+              <a href="#0" class="overlay">
+                <h1 class="overlay-text">EXPLORE</h1>
+              </a>
+              <img src="assets/img/londres.jpg" width="340px" height="285px">
+            </div>
+            <div class="triangle-container">
+              <div class="triangle"></div>
+            </div>
+            <div class="box-bottom">
+              <h2>Reino Unido</h2>
+              <p> 14.617 Opções de Hotéis </p>
+            </div>
           </div>
         </div>
-        <!-- /box-->
-        <div class="box">
-          <div class="box-top">
-            <a href="#0" class="overlay">
-              <h1 class="overlay-text">EXPLORE</h1>
-            </a>
-            <img src="assets/img/eua.jpg" width="340px" height="285px">
+         <div class="wrapper">
+        <div class="box-container">
+          <div class="box">
+            <div class="box-top">
+              <a href="#0" class="overlay">
+                <h1 class="overlay-text">EXPLORE</h1>
+              </a>
+              <img src="assets/img/brasil.jpg" width="340px" height="285px">
+            </div>
+            <div class="triangle-container">
+            </div>
+            <div class="box-bottom">
+              <h2>Brasil</h2>
+              <p>8.634 Opções de Hotéis </p>
+            </div>
           </div>
-          <div class="triangle-container">
-            <div class="triangle"></div>
+          <!-- /box-->
+          <div class="box">
+            <div class="box-top">
+              <a href="#0" class="overlay">
+                <h1 class="overlay-text">EXPLORE</h1>
+              </a>
+              <img src="assets/img/eua.jpg" width="340px" height="285px">
+            </div>
+            <div class="triangle-container">
+              <div class="triangle"></div>
+            </div>
+            <div class="box-bottom">
+              <h2>Estados Unidos</h2>
+              <p>8.473 Opções de Hotéis </p>
+            </div>
           </div>
-          <div class="box-bottom">
-            <h2>Estados Unidos</h2>
-            <p>8.473 Opções de Hotéis </p>
-          </div>
-        </div>
-        <!-- /box-->
-        <div class="box">
-          <div class="box-top">
-            <a href="#0" class="overlay">
-              <h1 class="overlay-text">EXPLORE</h1>
-            </a>
-            <img src="assets/img/londres.jpg" width="340px" height="285px">
-          </div>
-          <div class="triangle-container">
-            <div class="triangle"></div>
-          </div>
-          <div class="box-bottom">
-            <h2>Reino Unido</h2>
-            <p> 14.617 Opções de Hotéis </p>
+          <!-- /box-->
+          <div class="box">
+            <div class="box-top">
+              <a href="#0" class="overlay">
+                <h1 class="overlay-text">EXPLORE</h1>
+              </a>
+              <img src="assets/img/londres.jpg" width="340px" height="285px">
+            </div>
+            <div class="triangle-container">
+              <div class="triangle"></div>
+            </div>
+            <div class="box-bottom">
+              <h2>Reino Unido</h2>
+              <p> 14.617 Opções de Hotéis </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-          <!-- /box -->
-    <!-- ======= Rodapé ======= -->
-    <footer>
-  		<p align="center">Copyright &copy; 2020 All rights reserved | <b> Universal Airs</b></p>
-  	</footer>
-  	<!-- Fim Copy rights-->
-  </body>
-  </html>
-    <!-- Fim Rodapé -->
+    </main>
+
+
+
+
+    <footer class="fixarRodape">
+      <section class="rodape">
+          <div class="qualquer">
+                  <div class="logo"><img src="img/logoUA.png" alt="" width="200px" height="150px"></div>
+                  <div class="submenuL">
+                      <div class="submenu"><a href="home.html"><i class="fas fa-home"></i> Home</a></div>
+                      <div class="submenu"><a href="voo.html"><i class="fas fa-plane"></i> Voo</a></div>
+                      <div class="submenu"><a href="hospedagem.html"><i class="fas fa-hotel"></i> Hospedagem</a></div>
+                  </div>
+                  <div class="submenuR">
+                      <div class="submenu"><a href=""><i class="fas fa-car"></i> Aluguel de carros</a></div>
+                      <div class="submenu"><a href=""><i class="fas fa-ice-cream"></i> Atrações</a></div>
+                      <div class="submenu"><a href=""><i class="fas fa-info-circle"></i> Sobre nós</a></div>
+                  </div>
+                  <div class="form-principal">
+                  <form action="" class="form-contato" method="POST" tabindex="1">
+                      <p>Receba as novidades!</p>
+                      <input type="email" class="input-contato" name="" placeholder="Digite seu email:" required>
+                      <input type="submit" class="btn_form" value="Enviar">
+                      <p>Fale conosco</p>
+                      <i class="fab fa-instagram"></i>
+                      <i class="fab fa-facebook"></i>
+                      <i class="far fa-envelope"></i>
+                  </form>                         
+              </div>      
+          </div> 
+       </section>
+  </footer>
+</body>
+</html>
