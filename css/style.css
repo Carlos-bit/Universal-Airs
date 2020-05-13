@@ -16,7 +16,7 @@ body, html
     margin: 0 auto;    
 }
 
-br{padding-top: 2px;}
+/* br{padding-top: 2px;} */
 
 a{text-decoration: none;font-family: arial;}
 
@@ -242,20 +242,17 @@ a
 }
 .btn_cont
 {
-    font-weight: bold;
+    border-radius: 10px 10px ;
     width: 100%;
     font-size: 20px;
-    border-radius: 4px;
-    color: black;
-    height: 30px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    height: 35px;
     margin-bottom: 20px;
     cursor: pointer;
-    background: rgb(132, 165, 195);
+    background: #446295;
     display: block;
     border: none;
-    border-bottom: 1px solid #500707;
-    border-right: 1px solid #500707;
-    transition: 600ms;
     float: left;
 }
 
@@ -364,9 +361,8 @@ a
 }
 .inner h2
 {
-    margin-top: 1px;
     font-family: sans-serif;
-    font-size: 3.1em;
+    font-size: 2.7em;
     color: rgb(255, 255, 255);
     text-align: left;
     font-weight: 500;
@@ -497,13 +493,13 @@ a
 }
 .banner
 {
-    background: rgb(16, 52, 136);
+    background: #143a7c;
     width: 100%;
     height: 50vh;
 }
 .banner2
 {
-    background: rgb(16, 52, 136);
+    background: #143a7c;
     width: 100%;
     height: 10vh;
 }
@@ -797,15 +793,52 @@ a
 
 .btn_banner
 {
-    width: 100%;
-    font-size: 20px;
-    border-radius: 4px;
+    border-radius: 20px 20px;
+    margin-top: 70px;
+    height: 70px;
+    width: 900px;
+    font-size: 2.2em;
     color: black;
-    height: 50px;
-    margin-bottom: 20px;
     cursor: pointer;
     background: rgb(255, 255, 255);
-    display: block;
-    border: none;
-    float: right;
+    display: flex;    
 }
+input[type="text"] {
+    width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #150280;
+    box-shadow: 0 0 8px 0 #150280;
+  }
+  
+  
+  .inputWithIcon input[type="text"] {
+    padding-left: 20px;
+  }
+  
+  .inputWithIcon {
+    position: relative;
+  }
+  
+  .inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 323px 20px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+  .inputWithIcon input[type="text"]:focus + i {
+    color: #35147c;
+  }
+  
+  
