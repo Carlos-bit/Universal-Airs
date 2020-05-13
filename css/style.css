@@ -252,7 +252,7 @@ a
     height: 30px;
     margin-bottom: 20px;
     cursor: pointer;
-    background: rgb(59, 97, 187);
+    background: rgb(132, 165, 195);
     display: block;
     border: none;
     border-bottom: 1px solid #500707;
@@ -343,7 +343,7 @@ a
 .inner h1
 {
     font-family: Arial;
-    font-size: 1.4em;
+    font-size: 1.5em;
     color: #2e2e2e;
     text-align: left;
     font-weight: 700;
@@ -352,7 +352,7 @@ a
 {
     font-family: sans-serif;
     font-size: 1.3em;
-    color: rgb(65, 116, 167);
+    color: rgb(9, 17, 100);
     text-align: left;
     font-weight: 500;
 }
@@ -755,4 +755,19 @@ a
 .btnFrmLogin:hover{
     background-color: rgb(16, 52, 136);
     color: white;
+}
+
+.btn_banner
+{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 4px;
+    color: black;
+    height: 50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    display: block;
+    border: none;
+    float: right;
 }
