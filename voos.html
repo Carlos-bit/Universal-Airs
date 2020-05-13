@@ -24,7 +24,22 @@
         </div>        
     </header>
     <!-- conteudo -->
-    <div id="principal">
+    <div id="infoVoo">
+        <div id="infoVooConteudo">
+            <div id="valorInfoVoo">
+                <form action="">
+                    <span>Ponto de Parida</span><br><hr>
+                    <select name="" id="">
+                        <option value="">São Paulo</option>
+                        <option value="">Rio de Janeiro</option>
+                        <option value="">Minas Gerais</option>
+                        <option value="">Bahia</option>
+                    </select>
+                </form>
+            </div>            
+        </div>
+    </div>
+    <div id="principal">        
         <div id="esquerda">
             <div id="conteudoEsquerda1" class="conteudoEsquerda">
                 <p id="p1">As melhores opções de viagens para você !</p> <br>
@@ -43,15 +58,15 @@
             <div class="conteudos">
                 <div id="informacao1" class="informacao hoverzoomVoos">
                     <h1>Nova York</h1>
-                    <button class="btnExploreVoos">Explore</button>                    
+                    <button class="btnExploreVoos" onclick="explorar(1)">Explore</button>                    
                 </div>
-                <div id="informacao2" class="informacao hoverzoomVoos"><h1>Grecia</h1><button class="btnExploreVoos">Explore</button></div>
-                <div id="informacao3" class="informacao hoverzoomVoos"><h1>Paris</h1><button class="btnExploreVoos">Explore</button></div>
+                <div id="informacao2" class="informacao hoverzoomVoos"><h1>Grecia</h1><button class="btnExploreVoos" onclick="explorar(2)">Explore</button></div>
+                <div id="informacao3" class="informacao hoverzoomVoos"><h1>Paris</h1><button class="btnExploreVoos" onclick="explorar(3)">Explore</button></div>
             </div>
             <div id="conteudos2" class="conteudos">
-                <div id="informacao4" class="informacao hoverzoomVoos"><h1>Amsterdã</h1><button class="btnExploreVoos">Explore</button></div>
-                <div id="informacao5" class="informacao hoverzoomVoos"><h1>Londres</h1><button class="btnExploreVoos">Explore</button></div>
-                <div id="informacao6" class="informacao hoverzoomVoos"><h1>Noruega</h1><button class="btnExploreVoos">Explore</button></div>
+                <div id="informacao4" class="informacao hoverzoomVoos"><h1>Amsterdã</h1><button class="btnExploreVoos" onclick="explorar(4)">Explore</button></div>
+                <div id="informacao5" class="informacao hoverzoomVoos"><h1>Londres</h1><button class="btnExploreVoos" onclick="explorar(5)">Explore</button></div>
+                <div id="informacao6" class="informacao hoverzoomVoos"><h1>Noruega</h1><button class="btnExploreVoos" onclick="explorar(6)">Explore</button></div>
             </div>
         </div>
     </div>
@@ -74,15 +89,57 @@
                     <form action="" class="form-contato" method="POST" tabindex="1">
                         <p>Receba as novidades!</p>
                         <input type="text" class="input-contato" name="" placeholder="Digite seu email:" required>
-                        <input type="submit" class="btn_form" value="Enviar">
+                        <input type="submit" class="btn_form" id="btnEnviarFotter" value="Enviar">
                         <p>Fale conosco</p>
                         <i class="fab fa-instagram"></i>
                         <i class="fab fa-facebook"></i>
                         <i class="far fa-envelope"></i>
                     </form>                         
                 </div>      
-            </div>                  
+            </div>                 
+            <h1 style="color: white;"></h1>
          </section>
     </footer>
+    <script>
+        function explorar(numero){
+            if(numero == 1){
+                document.getElementById('infoVoo').style.display = 'block'
+                document.getElementById('infoVooConteudo').style.display = 'block'
+                document.getElementById('infoVooConteudo').style.background = 'url(img/views-of-the-sugar-loaf-1141047_1920.jpg)'
+                document.getElementById('conteudo').style.display = 'none'
+                document.getElementById('btnEnviarFotter').style.display = 'none'
+            }
+            if(numero == 2){
+                document.getElementById('infoVoo').style.display = 'block'
+                document.getElementById('infoVooConteudo').style.display = 'block'
+                document.getElementById('conteudo').style.display = 'none'
+                document.getElementById('btnEnviarFotter').style.display = 'none'
+            }
+            if(numero == 3){
+                document.getElementById('infoVoo').style.display = 'block'
+                document.getElementById('infoVooConteudo').style.display = 'block'
+                document.getElementById('conteudo').style.display = 'none'
+                document.getElementById('btnEnviarFotter').style.display = 'none'
+            }
+            if(numero == 4){
+                document.getElementById('infoVoo').style.display = 'block'
+                document.getElementById('infoVooConteudo').style.display = 'block'
+                document.getElementById('conteudo').style.display = 'none'
+                document.getElementById('btnEnviarFotter').style.display = 'none'
+            }
+            if(numero == 5){
+                document.getElementById('infoVoo').style.display = 'block'
+                document.getElementById('infoVooConteudo').style.display = 'block'
+                document.getElementById('conteudo').style.display = 'none'
+                document.getElementById('btnEnviarFotter').style.display = 'none'
+            }
+            if(numero == 6){
+                document.getElementById('infoVoo').style.display = 'block'
+                document.getElementById('infoVooConteudo').style.display = 'block'
+                document.getElementById('conteudo').style.display = 'none'
+                document.getElementById('btnEnviarFotter').style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>

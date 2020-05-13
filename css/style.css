@@ -93,8 +93,6 @@ a
     color: rgb(255, 255, 255);
 }
 
-
-
 /* * Criando efeito parallax */
 .parallax
 {
@@ -574,6 +572,44 @@ a
     margin-bottom: 9.7%;
     justify-content: space-between;
 }
+#infoVoo{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;   
+}
+#infoVooConteudo{
+    display: none;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+}
+#valorInfoVoo{
+    width: 35%; 
+    margin: 0 auto; 
+    height: 39%; 
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#valorInfoVoo form{
+    padding: 15px;
+}
+#valorInfoVoo input{
+    width: 50%; 
+    margin: 0 auto; 
+    border: 1px solid blue; 
+    height: 39%; 
+    border-radius: 2x;
+}
+#valorInfoVoo select{
+    border: 1px solid blue;
+    width: 40%;
+    margin-top: 2px;
+}
 .informacao{
     width: 30%;
     height: 100%;     
@@ -629,7 +665,9 @@ a
 #informacao6{background-image: url(../img/noruega.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background: url(../img/views-of-the-sugar-loaf-1141047_1920.jpg);
 }
+
 /* Efeito Hover Zoom*/
 .hoverzoomVoos {
     position: relative;
