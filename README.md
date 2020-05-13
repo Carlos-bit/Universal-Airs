@@ -1,6 +1,6 @@
 # Universal Airs <h1>
 
-# Foi desenvolvido um projeto para empresa que visa aumentar os lucros e o desing do site em questão
+# O projeto para universal airs consiste em desenvolver um site com interface moderna e acessivel.
 
 Ultilizando as tecnologias:
 
