@@ -25,19 +25,37 @@
         </div>        
     </header>
     <!-- conteudo -->
-    <div id="infoVoo">
+    <div id="infoVoo"> 
         <div id="infoVooConteudo">
-            <div id="valorInfoVoo">
+            <div id="valorInfoVoo" style="float: left; text-align: center;">
+                <img src="img/00000.png" alt="">
+            </div>     
+            <div id="valorInfoVoo" style="float: right;">
                 <form action="">
-                    <span>Ponto de Parida</span><br><hr>
+                    <legend>Voos</legend>
+                    <span style="margin-top: 0;">Local de Partida</span><br>
                     <select name="" id="">
                         <option value="">São Paulo</option>
                         <option value="">Rio de Janeiro</option>
                         <option value="">Minas Gerais</option>
                         <option value="">Bahia</option>
-                    </select>
+                    </select>                
+                
+                    <span>Local de destino</span><br>
+                    <select name="" id="">
+                        <option value="" id="optionDestinoVoo">Nova York</option>                        
+                    </select>                
+                
+                    <span>Data de partida</span><br>
+                    <input type="date" id="dataPartida">
+                    <input type="time" id="horaPartida">
+                    <span>Valor Passagem</span>
+                    <input type="text" name="valorPassagem" id="valorPassagem" disabled value="R$ 100,00">
+                    <br>                    
+                    <input type="submit" class="btnFrmLogin btnPassagem" value="Comprar" id="btnComprarVoos" style="margin-top: 16px;">
+                    <input type="submit" class="btnFrmLogin btnPassagem" name="" id="btnSairVoos" value="Sair">
                 </form>
-            </div>            
+            </div>         
         </div>
     </div>
     <div id="principal">        
@@ -103,43 +121,66 @@
     </footer>
     <script>
         function explorar(numero){
-            if(numero == 1){
+            if(numero == 1){                
                 document.getElementById('infoVoo').style.display = 'block'
-                document.getElementById('infoVooConteudo').style.display = 'block'
+                document.getElementById('infoVooConteudo').style.display = 'flex'
                 document.getElementById('infoVooConteudo').style.background = 'url(img/views-of-the-sugar-loaf-1141047_1920.jpg)'
+                document.getElementById('infoVooConteudo').style.backgroundSize = 'cover'
                 document.getElementById('conteudo').style.display = 'none'
                 document.getElementById('btnEnviarFotter').style.display = 'none'
+                document.getElementById('optionDestinoVoo').innerText = 'Nova York'
             }
             if(numero == 2){
                 document.getElementById('infoVoo').style.display = 'block'
-                document.getElementById('infoVooConteudo').style.display = 'block'
+                document.getElementById('infoVooConteudo').style.display = 'flex'
+                document.getElementById('infoVooConteudo').style.background = 'url(img/greece-2707528_640.jpg)'
+                document.getElementById('infoVooConteudo').style.backgroundSize = 'cover'
                 document.getElementById('conteudo').style.display = 'none'
                 document.getElementById('btnEnviarFotter').style.display = 'none'
+                document.getElementById('optionDestinoVoo').innerText = 'Grecia'
             }
             if(numero == 3){
                 document.getElementById('infoVoo').style.display = 'block'
-                document.getElementById('infoVooConteudo').style.display = 'block'
+                document.getElementById('infoVooConteudo').style.display = 'flex'
+                document.getElementById('infoVooConteudo').style.background = 'url(img/paris-1836415_640.jpg)'
+                document.getElementById('infoVooConteudo').style.backgroundSize = 'cover'
                 document.getElementById('conteudo').style.display = 'none'
                 document.getElementById('btnEnviarFotter').style.display = 'none'
+                document.getElementById('optionDestinoVoo').innerText = 'Paris'
             }
             if(numero == 4){
                 document.getElementById('infoVoo').style.display = 'block'
-                document.getElementById('infoVooConteudo').style.display = 'block'
+                document.getElementById('infoVooConteudo').style.display = 'flex'
+                document.getElementById('infoVooConteudo').style.background = 'url(img/Amsterdam.jpg)'
+                document.getElementById('infoVooConteudo').style.backgroundSize = 'cover'
                 document.getElementById('conteudo').style.display = 'none'
                 document.getElementById('btnEnviarFotter').style.display = 'none'
+                document.getElementById('optionDestinoVoo').innerText = 'Amsterdã'
             }
             if(numero == 5){
                 document.getElementById('infoVoo').style.display = 'block'
-                document.getElementById('infoVooConteudo').style.display = 'block'
+                document.getElementById('infoVooConteudo').style.display = 'flex'
+                document.getElementById('infoVooConteudo').style.background = 'url(img/views-of-the-sugar-loaf-1141047_1920.jpg)'
+                document.getElementById('infoVooConteudo').style.backgroundSize = 'cover'
                 document.getElementById('conteudo').style.display = 'none'
                 document.getElementById('btnEnviarFotter').style.display = 'none'
+                document.getElementById('optionDestinoVoo').innerText = 'Londres'
             }
             if(numero == 6){
                 document.getElementById('infoVoo').style.display = 'block'
-                document.getElementById('infoVooConteudo').style.display = 'block'
+                document.getElementById('infoVooConteudo').style.display = 'flex'
+                document.getElementById('infoVooConteudo').style.background = 'url(img/views-of-the-sugar-loaf-1141047_1920.jpg)'
+                document.getElementById('infoVooConteudo').style.backgroundSize = 'cover'
                 document.getElementById('conteudo').style.display = 'none'
                 document.getElementById('btnEnviarFotter').style.display = 'none'
-            }
+                document.getElementById('optionDestinoVoo').innerText = 'Noruega'
+            }            
+        }
+        function sairVoo(){
+            document.getElementById('infoVoo').style.display = 'none'
+            document.getElementById('infoVooConteudo').style.display = 'none'
+            document.getElementById('btnEnviarFotter').style.display = 'block'
+            document.getElementById('conteudo').style.display = 'flex'
         }
     </script>
 </body>
