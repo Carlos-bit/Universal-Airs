@@ -675,6 +675,7 @@ a
     margin-top: 0px;
 }
 #valorInfoVoo input:hover{
+    border-color: blue;
     box-shadow: inset 0 0 2px blue;
     transition: all 600ms ease;
 }
@@ -682,6 +683,10 @@ a
     border: 1px solid black;
     width: 100%;
     margin-top: 0px;
+}#valorInfoVoo select:hover{
+    border-color: blue;
+    box-shadow: inset 0 0 2px blue;
+    transition: all 600ms ease;
 }
 #valorInfoVoo #dataPartida{
     width: 49%;
