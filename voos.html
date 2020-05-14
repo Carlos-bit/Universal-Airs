@@ -25,19 +25,37 @@
         </div>        
     </header>
     <!-- conteudo -->
-    <div id="infoVoo">
+    <div id="infoVoo"> 
         <div id="infoVooConteudo">
-            <div id="valorInfoVoo">
+            <div id="valorInfoVoo" style="float: left; text-align: center;">
+                <img src="img/00000.png" alt="">
+            </div>     
+            <div id="valorInfoVoo" style="float: right;">
                 <form action="">
-                    <span>Ponto de Parida</span><br><hr>
-                    <select name="" id="">
+                    <legend>Voos</legend>
+                    <span style="margin-top: 0;">Local de Partida</span><br>
+                    <select name="" id="" class="efeitoShadow">
                         <option value="">São Paulo</option>
                         <option value="">Rio de Janeiro</option>
                         <option value="">Minas Gerais</option>
                         <option value="">Bahia</option>
-                    </select>
+                    </select>                
+                
+                    <span>Local de destino</span><br>
+                    <select name="" id="" class="efeitoShadow">
+                        <option value="" id="optionDestinoVoo">Nova York</option>                        
+                    </select>                
+                
+                    <span>Data de partida</span><br>
+                    <input type="date" id="dataPartida" class="efeitoShadow">
+                    <input type="time" id="horaPartida" class="efeitoShadow">
+                    <span>Valor Passagem</span>
+                    <input type="text" name="valorPassagem" class="efeitoShadow" id="valorPassagem" disabled value="R$ 100,00">
+                    <br>                    
+                    <input type="submit" class="btnFrmLogin btnPassagem efeitoShadow" value="Comprar" id="btnComprarVoos" style="margin-top: 16px;">
+                    <input type="submit" class="btnFrmLogin btnPassagem efeitoShadow" name="" id="btnSairVoos" value="Sair">
                 </form>
-            </div>            
+            </div>         
         </div>
     </div>
     <div id="principal">        
@@ -61,13 +79,13 @@
                     <h1>Nova York</h1>
                     <button class="btnExploreVoos" onclick="explorar(1)">Explore</button>                    
                 </div>
-                <div id="informacao2" class="informacao hoverzoomVoos"><h1>Grecia</h1><button class="btnExploreVoos" onclick="explorar(2)">Explore</button></div>
-                <div id="informacao3" class="informacao hoverzoomVoos"><h1>Paris</h1><button class="btnExploreVoos" onclick="explorar(3)">Explore</button></div>
+                <div id="informacao2" class="informacao hoverzoomVoos efeitoShadow"><h1>Grecia</h1><button class="btnExploreVoos" onclick="explorar(2)">Explore</button></div>
+                <div id="informacao3" class="informacao hoverzoomVoos efeitoShadow"><h1>Paris</h1><button class="btnExploreVoos" onclick="explorar(3)">Explore</button></div>
             </div>
             <div id="conteudos2" class="conteudos">
-                <div id="informacao4" class="informacao hoverzoomVoos"><h1>Amsterdã</h1><button class="btnExploreVoos" onclick="explorar(4)">Explore</button></div>
-                <div id="informacao5" class="informacao hoverzoomVoos"><h1>Londres</h1><button class="btnExploreVoos" onclick="explorar(5)">Explore</button></div>
-                <div id="informacao6" class="informacao hoverzoomVoos"><h1>Noruega</h1><button class="btnExploreVoos" onclick="explorar(6)">Explore</button></div>
+                <div id="informacao4" class="informacao hoverzoomVoos efeitoShadow"><h1>Amsterdã</h1><button class="btnExploreVoos" onclick="explorar(4)">Explore</button></div>
+                <div id="informacao5" class="informacao hoverzoomVoos efeitoShadow"><h1>Londres</h1><button class="btnExploreVoos" onclick="explorar(5)">Explore</button></div>
+                <div id="informacao6" class="informacao hoverzoomVoos efeitoShadow"><h1>Noruega</h1><button class="btnExploreVoos" onclick="explorar(6)">Explore</button></div>
             </div>
         </div>
     </div>
@@ -101,46 +119,7 @@
             <h1 style="color: white;"></h1>
          </section>
     </footer>
-    <script>
-        function explorar(numero){
-            if(numero == 1){
-                document.getElementById('infoVoo').style.display = 'block'
-                document.getElementById('infoVooConteudo').style.display = 'block'
-                document.getElementById('infoVooConteudo').style.background = 'url(img/views-of-the-sugar-loaf-1141047_1920.jpg)'
-                document.getElementById('conteudo').style.display = 'none'
-                document.getElementById('btnEnviarFotter').style.display = 'none'
-            }
-            if(numero == 2){
-                document.getElementById('infoVoo').style.display = 'block'
-                document.getElementById('infoVooConteudo').style.display = 'block'
-                document.getElementById('conteudo').style.display = 'none'
-                document.getElementById('btnEnviarFotter').style.display = 'none'
-            }
-            if(numero == 3){
-                document.getElementById('infoVoo').style.display = 'block'
-                document.getElementById('infoVooConteudo').style.display = 'block'
-                document.getElementById('conteudo').style.display = 'none'
-                document.getElementById('btnEnviarFotter').style.display = 'none'
-            }
-            if(numero == 4){
-                document.getElementById('infoVoo').style.display = 'block'
-                document.getElementById('infoVooConteudo').style.display = 'block'
-                document.getElementById('conteudo').style.display = 'none'
-                document.getElementById('btnEnviarFotter').style.display = 'none'
-            }
-            if(numero == 5){
-                document.getElementById('infoVoo').style.display = 'block'
-                document.getElementById('infoVooConteudo').style.display = 'block'
-                document.getElementById('conteudo').style.display = 'none'
-                document.getElementById('btnEnviarFotter').style.display = 'none'
-            }
-            if(numero == 6){
-                document.getElementById('infoVoo').style.display = 'block'
-                document.getElementById('infoVooConteudo').style.display = 'block'
-                document.getElementById('conteudo').style.display = 'none'
-                document.getElementById('btnEnviarFotter').style.display = 'none'
-            }
-        }
+    <script src="js/script.js">        
     </script>
 </body>
 </html>

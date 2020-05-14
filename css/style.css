@@ -565,46 +565,8 @@ a
     display: flex;
     height: 45%;
     /* background-color: yellow; */
-    margin-bottom: 9.7%;
+    margin-bottom: 8.5%;
     justify-content: space-between;
-}
-#infoVoo{
-    display: none;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: rgba(0,0,0,0.8);
-    top: 0;
-    left: 0;   
-}
-#infoVooConteudo{
-    display: none;
-    width: 70%;
-    height: 100%;
-    margin: 0 auto;
-    background-color: white;
-}
-#valorInfoVoo{
-    width: 35%; 
-    margin: 0 auto; 
-    height: 39%; 
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-#valorInfoVoo form{
-    padding: 15px;
-}
-#valorInfoVoo input{
-    width: 50%; 
-    margin: 0 auto; 
-    border: 1px solid blue; 
-    height: 39%; 
-    border-radius: 2x;
-}
-#valorInfoVoo select{
-    border: 1px solid blue;
-    width: 40%;
-    margin-top: 2px;
 }
 .informacao{
     width: 30%;
@@ -663,7 +625,85 @@ a
     background-size: cover;
     background: url(../img/views-of-the-sugar-loaf-1141047_1920.jpg);
 }
-
+/* Informação do voo */
+#infoVoo{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;   
+}
+#infoVooConteudo{
+    display: none;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+#valorInfoVoo{
+    width: 35%; 
+    margin: 0 auto; 
+    height: 45%; 
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 25px;
+}
+#valorInfoVoo legend{
+    font-size: 35pt;
+    font-family: Glacial Indiferrence;
+}
+#valorInfoVoo form{
+    margin: 8px;
+}
+#valorInfoVoo form span{
+    float: left;
+    margin-top: 16px;
+    width: 100%;
+    text-align: left;
+}
+#valorInfoVoo input{
+    width: 100%; 
+    margin: 0 auto; 
+    border: 1px solid black; 
+    height: 39%; 
+    border-radius: 2px;
+    margin-top: 0px;
+}
+#valorInfoVoo input:hover{
+    border-color: blue;    
+}
+#valorInfoVoo select{
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 0px;
+}#valorInfoVoo select:hover{
+    border-color: blue;    
+}
+#valorInfoVoo #dataPartida{
+    width: 49%;
+}
+#valorInfoVoo #horaPartida{
+    width: 49%;
+}
+#valorInfoVoo #valorPassagem{
+    height: 25px;
+}
+#valorInfoVoo .btnPassagem{
+    height: 35px;
+    width: 49%;
+    border-radius: 4px;
+    border-color: blue;
+}
+/* Efeito input botão, box - shadow */
+.efeitoShadow:hover{
+    box-shadow: inset 0 0 2px blue;
+    transition: all 600ms ease;
+}
 /* Efeito Hover Zoom*/
 .hoverzoomVoos {
     position: relative;
@@ -773,11 +813,16 @@ a
     /* background-color: rgba(16, 52, 136, 0.2);  */
 }
 #conteudoLogin input{
-    border: 1px solid rgb(16, 52, 136);
+    border: 1px solid blue;
     width: 100%;
     height: 10%;
     margin-bottom: 5%;
     border-radius: 5px;
+    transition: all 600ms ease;
+}
+#conteudoLogin input:hover{
+    box-shadow: inset 0 0 0 1px rgb(0, 0, 255);    
+    transition: all 500ms ease;
 }
 #frmLogin h1{
     font-size: 25pt;
@@ -787,7 +832,7 @@ a
     margin-bottom: 0;
 }
 .btnFrmLogin:hover{
-    background-image: linear-gradient(to left, rgb(94, 93, 141),rgb(16, 52, 136));
+    background: linear-gradient(to left, rgb(94, 93, 141),rgb(16, 52, 136));
     color: white;
 }
 
