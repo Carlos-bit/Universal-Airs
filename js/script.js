@@ -1,3 +1,4 @@
+// Função que exibe informações de voos
 function explorar(numero){
     if(numero == 1){                
         document.getElementById('infoVoo').style.display = 'block'
@@ -54,9 +55,26 @@ function explorar(numero){
         document.getElementById('optionDestinoVoo').innerText = 'Noruega'
     }            
 }
+// Sair da pagina de que exibe detalhes do voo
 function sairVoo(){
     document.getElementById('infoVoo').style.display = 'none'
     document.getElementById('infoVooConteudo').style.display = 'none'
     document.getElementById('btnEnviarFotter').style.display = 'block'
     document.getElementById('conteudo').style.display = 'flex'
 }
+// Lista de relevância voos com jquery
+$('#pFiltrosVoos').click(function(){
+    $('#listRelevanciaVoo').fadeToggle();
+});
+$('#rlRelevanciaVoo').click(function(){    
+    $('#pFiltrosVoos').html('Relevância<span class="material-icons" style="float: right; margin-top: 2px;">keyboard_arrow_down</span>');
+    $('#listRelevanciaVoo').fadeOut();
+});
+$('#rlPrecoVoo').click(function(){
+    $('#pFiltrosVoos').html('Preço<span class="material-icons" style="float: right; margin-top: 2px;">keyboard_arrow_down</span>');
+    $('#listRelevanciaVoo').fadeOut();
+});
+$('#rlEmpresaVoo').click(function(){
+    $('#pFiltrosVoos').html('Empresa<span class="material-icons" style="float: right; margin-top: 2px;">keyboard_arrow_down</span>');
+    $('#listRelevanciaVoo').fadeOut();
+});

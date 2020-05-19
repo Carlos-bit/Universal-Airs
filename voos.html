@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type='text/css' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <!--*Menu-->
@@ -64,13 +66,13 @@
                 <p id="p1">As melhores opções de viagens para você !</p> <br>
                 <p id="p2">Compre suas passagens aéreas sem sair de casa</p>
             </div>
-            <div id="conteudoEsquerda2" class="conteudoEsquerda">                
-                <select name="" id="listaRelevanciaVoos">
-                    <option value="" selected>Por Relevância</option>
-                    <option value="">Por Preço</option>
-                    <option value="">Por Valor</option>
-                    <option value="">Por Empresa</option>
-                </select>                    
+            <div id="conteudoEsquerda2" class="conteudoEsquerda">
+                <p id="pFiltrosVoos">Filtros<span class="material-icons" style="float: right; margin-top: 2px; border: 0;">keyboard_arrow_down</span></p>
+                <ul id="listRelevanciaVoo">                    
+                    <li id="rlRelevanciaVoo">Relevância</li>
+                    <li id="rlPrecoVoo">Preço</li>
+                    <li id="rlEmpresaVoo">Empresa</li>                    
+                </ul>
             </div>  
         </div>
         <div id="conteudo">
